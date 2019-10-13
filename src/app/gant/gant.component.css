@@ -1,0 +1,23 @@
+#gantt-base{
+	background-color: #333;
+	color: azure;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+#gantt-base .bubble{
+	height: 10px;
+	background-color: azure;
+	border-radius: 4px;
+	top: 7px;
+	float: left;
+	display: block;
+	position: relative;
+	opacity: 0.7;
+}
+
+#gantt-base .username{
+	float: left;
+	display: block;
+	width: 10%;
+}
