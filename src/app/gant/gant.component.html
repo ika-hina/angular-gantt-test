@@ -4,9 +4,18 @@
 	this is width of name area! {{ name_width }}<br>
 	this is width of gantt area! {{ gant_width }}<br>
 	this is pixels of unit time(minute)! {{ pixels_per_unit }}<br>
-	<span class="username">username1</span>
-	<span *ngFor="let item of this.schedule_data"><!--バーを1行分表示するコードだよ-->
-		<span class="bubble" [style.margin-left]="item.start" [style.width]="item.width"></span>
+	<span class="namearea">
+		<span  *ngFor="let day_item of schedule_data"><!--1番左の名前エリア-->
+			<span class="username">username1</span>
+			<br>
+		</span>
 	</span>
-	<br>
+	<span class="grapharea">
+		<span *ngFor="let day_item of schedule_data">
+			<span *ngFor="let item of day_item"><!--バーを1行分表示するコードだよ-->
+				<span class="bubble" [style.margin-left]="item.start" [style.width]="item.width"></span>
+			</span>
+			<br>
+		</span>
+	</span>
 </div>

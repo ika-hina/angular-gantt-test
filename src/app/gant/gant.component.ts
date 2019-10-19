@@ -30,9 +30,9 @@ export const dates_array: date[] = [
   {user:users_array[1],start:1400,end:1500}
 ]
 
-export const schedule_array: schedule_drawing_style[] = [
-  {start:'300px',width:'200px'},
-  {start:'100px',width:'400px'}
+export const schedule_array: schedule_drawing_style[][] = [
+  [{start:'300px',width:'200px'},{start:'100px',width:'400px'}],
+  [{start:'300px',width:'200px'},{start:'100px',width:'400px'}]
 ]
 /**仮オブジェクト生成 */
 
